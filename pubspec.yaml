@@ -22,6 +22,6 @@ flutter:
     platforms:
       android:
         package: fl.mlkit.identify.language
-        pluginClass: FlMlkitIdentifyLanguagePlugin
+        pluginClass: FlMlKitIdentifyLanguagePlugin
       ios:
-        pluginClass: FlMlkitIdentifyLanguagePlugin
+        pluginClass: FlMlKitIdentifyLanguagePlugin
