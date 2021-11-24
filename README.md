@@ -37,4 +37,4 @@ void func() {
 
 ```
 
-<img src="https://github.com/Wayaer/fl_mlkit_identify_language/tree/main/res/example.png" alt="example" width=360/>
+<img src="https://github.com/Wayaer/fl_mlkit_identify_language/raw/main/res/example.png" width="60%"/>
