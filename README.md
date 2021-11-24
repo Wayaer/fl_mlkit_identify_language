@@ -9,7 +9,7 @@
   passed to the success listener, indicating the language of the text. If no language is confidently
   detected, the code [und](https://www.rfc-editor.org/info/bcp47#section-4.1)(undetermined) is
   passed.
-  
+
 * [supported languages](https://developers.google.com/ml-kit/language/identification/langid-support)
 
 ```dart
@@ -36,3 +36,5 @@ void func() {
 }
 
 ```
+
+![](https://github.com/Wayaer/fl_mlkit_identify_language/tree/main/res/example.png)
