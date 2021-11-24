@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_waya/flutter_waya.dart';
 
 void main() {
-  runApp(ExtendedWidgetsApp(home: _App()));
+  runApp(ExtendedWidgetsApp(home: const _App()));
 }
 
 class _App extends StatefulWidget {
