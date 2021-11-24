@@ -3,12 +3,14 @@
 ## Identify the language of text with ML Kit on Android And IOS
 
 * 如果调用成功，则会返回[BCP-47语言代码](https://en.wikipedia.org/wiki/IETF_language_tag)
-  tag和confidence,如果检测到语言，则返回通过代码[und](https://www.rfc-editor.org/info/bcp47#section-4.1)(undetermined)。
+  tag和confidence,如果没有检测到语言，则返回通过代码[und](https://www.rfc-editor.org/info/bcp47#section-4.1)(undetermined)。
 
 * If the call succeeds, a [BCP-47 language code](https://en.wikipedia.org/wiki/IETF_language_tag) is
   passed to the success listener, indicating the language of the text. If no language is confidently
   detected, the code [und](https://www.rfc-editor.org/info/bcp47#section-4.1)(undetermined) is
   passed.
+  
+* [supported languages](https://developers.google.com/ml-kit/language/identification/langid-support)
 
 ```dart
 

@@ -42,8 +42,7 @@ class FlMlKitIdentifyLanguagePlugin : FlutterPlugin, MethodCallHandler {
                 getLanguageIdentification().identifyPossibleLanguages(text)
                     .addOnSuccessListener { identifiedLanguages ->
                         result.success(identifiedLanguages.map { model -> model.data })
-                    }
-                    .addOnFailureListener {
+                    }.addOnFailureListener {
                         result.success(null)
                     }
             }

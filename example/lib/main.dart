@@ -45,17 +45,22 @@ class _AppState extends State<_App> {
                     onPressed: () async {
                       context.focusNode();
                       final confidence = await selectConfidence();
-                      log(confidence);
                       if (confidence != null) {
                         final state = await mlKitIdentifyLanguage
                             .setConfidence(confidence);
-                        log(state);
                         if (state) reset();
                       }
                     },
                     text: 'Click Modify Confidence : ' + value.toString());
               }),
           ElevatedText(text: 'Identify Language', onPressed: identifyLanguage),
+          ElevatedText(
+              text: 'Get Native Confidence',
+              onPressed: () {
+                mlKitIdentifyLanguage.getCurrentConfidence().then((value) {
+                  showToast(value.toString());
+                });
+              }),
           ElevatedText(
               text: 'Identify Possible Language',
               onPressed: identifyPossibleLanguages),
